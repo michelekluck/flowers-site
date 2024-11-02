@@ -1,9 +1,9 @@
 
 /*CSS GERAL*/
 body {
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
-    height: 100%;
     overflow-x: hidden;
     font-family: "Kumbh Sans", serif;
     font-optical-sizing: auto;
@@ -12,7 +12,6 @@ body {
     font-variation-settings: "YOPQ" 116;
     color: #2D2D2D;
     background-color: #F0F0F0;
-    margin: 0 auto;
 }
 
 
@@ -30,7 +29,11 @@ body {
 }
 
 #homeMenu {
-    margin-right: 100px;
+    margin-right: 240px;
+}
+
+#invernoMenu {
+    margin-right: 0;
 }
 
 .header a:hover {
@@ -48,12 +51,22 @@ body {
 }
 /*FIM HEADER*/
 
-.titleHome {
-    font-weight: 500;
-    text-align: left;
-    margin-left: 150px;
-    font-size: 48px;
+.topoHome {
+    max-width: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
+
+.mainTitle {
+    font-weight: 500;
+    font-size: 48px;
+    display: block;
+    margin: auto;
+}
+
 
 .purpleBg {
     background-color: #C885F1;
