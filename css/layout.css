@@ -60,12 +60,11 @@ body {
 /*TOPO*/
 .topoHome {
     max-width: fit-content;
-    margin: auto;
+    margin: 50px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-bottom: 50px;
 }
 
 .mainTitle {
@@ -169,6 +168,7 @@ body {
     max-width: 800px; 
     width: 100%; 
     padding: 0 20px;
+    margin-top: 50px;
 }
 
 .purpleBgSeason {
