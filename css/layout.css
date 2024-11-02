@@ -55,6 +55,8 @@ body {
 }
 /*FIM HEADER*/
 
+/*HOME*/
+
 /*TOPO*/
 .topoHome {
     max-width: fit-content;
@@ -73,7 +75,7 @@ body {
     margin: auto;
 }
 
-.purpleBg {
+.purpleBgHome {
     background-color: #C885F1;
     border-radius: 10px 10px 10px 10px;
     box-shadow: -55px 0 0 #C885F1; 
@@ -153,5 +155,31 @@ body {
 
 .botao:hover {
     border-color: #2D2D2D;
+}
+/*FIM FOOTER CADASTRE-SE*/
+
+/*FIM HOME*/
+
+/*ESTAÇÕES*/
+.topoSeason {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    margin: auto;
+    max-width: 800px; 
+    width: 100%; 
+    padding: 0 20px;
+}
+
+.purpleBgSeason {
+    background-color: #C885F1;
+    border-radius: 10px;
+    box-shadow: 55px 0 0 #C885F1; 
+}
+
+.seasonTitle {
+    font-weight: 500;
+    font-size: 48px;
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
