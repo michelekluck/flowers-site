@@ -21,15 +21,23 @@ body {
     text-align: center;
 }
 
-.header a{ 
-    text-decoration: none;
+.header a { 
     font-size: 16px;
     margin-right: 60px;
+    color: #2D2D2D;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px transparent; /* Borda transparente para reservar espaço */
+}
+
+.link {
+    text-decoration: none;
     color: #2D2D2D;
 }
 
 #homeMenu {
     margin-right: 240px;
+    text-decoration: none;
 }
 
 #invernoMenu {
@@ -37,20 +45,17 @@ body {
 }
 
 .header a:hover {
-    background-color:  #F0F0F0;
-    border: solid 1px;
-    padding: 10px;
-    border-radius: 10px;
+    background-color: #F0F0F0;
+    border-color: #2D2D2D; 
 }
 
 .header a.active {
-    background-color:  #F0F0F0;
-    border: solid 1px;
-    padding: 10px;
-    border-radius: 10px;
+    background-color: #F0F0F0;
+    border-color: #2D2D2D;
 }
 /*FIM HEADER*/
 
+/*TOPO*/
 .topoHome {
     max-width: fit-content;
     margin: auto;
@@ -58,6 +63,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-bottom: 50px;
 }
 
 .mainTitle {
@@ -67,9 +73,85 @@ body {
     margin: auto;
 }
 
-
 .purpleBg {
     background-color: #C885F1;
     border-radius: 10px 10px 10px 10px;
     box-shadow: -55px 0 0 #C885F1; 
 }
+/*FIM TOPO*/
+
+/*OPÇÕES*/
+.optionText {
+    max-width: fit-content;
+    margin: auto;
+}
+
+.optionText p {
+    margin-right: 530px;
+    font-size: 20px;
+}
+
+#orangeBg {
+    background-color: #F3B341;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.optionAll {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.option {
+    background-color: white;
+    width: 191px;
+    height: 149px;
+    display: inline-block;
+    text-align: left;
+    border-radius: 30px;
+    box-shadow: 2px 2px 6px 1px rgb(0 0 0 / 25%);
+    border: solid 1px transparent;
+}
+
+.option p {
+    padding: 20px;
+    font-size: 24px;
+}
+
+.option span {
+    font-weight: 700;
+}
+
+.option:hover {
+    border-color: #2D2D2D;
+}
+/*FIM OPÇÕES*/
+
+/*FOOTER CADASTRE-SE*/
+.footer {
+    max-width: fit-content;
+    margin: auto;
+    font-size: 20px;
+}
+
+.botao {
+    background-color: #F3B341;
+    padding: 1px 30px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 2px 2px 6px 1px rgb(0 0 0 / 25%);
+    border: solid 1px transparent;
+    width: 442px;
+    margin: auto;
+}
+
+.botao:hover {
+    border-color: #2D2D2D;
+}
+
