@@ -12,6 +12,7 @@ body {
     font-variation-settings: "YOPQ" 116;
     color: #2D2D2D;
     background-color: #F0F0F0;
+    display: relative;
 }
 
 
@@ -150,6 +151,7 @@ body {
     border: solid 1px transparent;
     width: 442px;
     margin: auto;
+    margin-bottom: 80px;
 }
 
 .botao:hover {
@@ -159,7 +161,7 @@ body {
 
 /*FIM HOME*/
 
-/*ESTAÇÕES*/
+/*FLORES DE ... */
 .topoSeason {
     display: flex;
     align-items: center;
@@ -177,9 +179,108 @@ body {
     box-shadow: 55px 0 0 #C885F1; 
 }
 
+
 .seasonTitle {
     font-weight: 500;
     font-size: 48px;
     text-align: left; /* Alinha o texto à esquerda */
+    margin-bottom: 50px;
+}
+/*FLORES DE ... FIM*/
+
+/*IMAGENS FLORES*/
+.imagens{
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    margin: auto;
+    display: flex;
+    gap: 250px;
 }
 
+.flwTitle {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.img {
+    margin: 10px 0;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+}
+
+.modal {
+    background-color: #F3B341;
+    width: 270px;
+    max-height: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+.modalTitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.modalText {
+    font-weight: 400;
+    align-items: center;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.closeButton {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px 12px;
+    font-weight: 800;
+    align-items: right;
+    cursor: pointer;
+}
+
+header {
+    text-align: right;
+    margin: auto;
+}
+
+.modalButton {
+    background-color: #F3B341;
+    border-radius: 130px;
+    border: 0px;
+    padding: 10px 20px;
+    font-family: "Kumbh Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500; /* ou o valor desejado */
+    font-style: normal;
+    font-variation-settings: "YOPQ" 116;
+    color: #2D2D2D;
+    cursor: pointer;
+    border: solid 1px transparent;
+    margin-bottom: 50px;
+}
+
+.saibaMais {
+    align-items: center;
+    text-align: center;
+}
+
+.modalButton:hover {
+    border-color: #2D2D2D;
+}
