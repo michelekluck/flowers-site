@@ -24,7 +24,7 @@ body {
 
 .header a { 
     font-size: 16px;
-    margin-right: 60px;
+    margin-right: 40px;
     color: #2D2D2D;
     padding: 10px;
     border-radius: 10px;
@@ -37,7 +37,7 @@ body {
 }
 
 #homeMenu {
-    margin-right: 240px;
+    margin-right: 190px;
     text-decoration: none;
 }
 
@@ -267,7 +267,7 @@ header {
     padding: 10px 20px;
     font-family: "Kumbh Sans", serif;
     font-optical-sizing: auto;
-    font-weight: 500; /* ou o valor desejado */
+    font-weight: 500;
     font-style: normal;
     font-variation-settings: "YOPQ" 116;
     color: #2D2D2D;
@@ -283,4 +283,96 @@ header {
 
 .modalButton:hover {
     border-color: #2D2D2D;
+}
+/*FIM IMAGENS FLORES*/
+
+/*FORMULÁRIO*/
+
+label {
+    font-size: 20px;
+}
+
+.inputForm {
+    width: 100%;
+    width: 800px;
+    height: 55px;
+    border-radius: 10px;
+    display: block;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 15px;
+    outline: 0;
+    background-color: #F0F0F0;
+    font-family: "Kumbh Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "YOPQ" 116;
+    color: #2d2d2d;
+    margin-bottom: 20px;
+}
+
+.form {
+    margin-top: 50px;
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+input::placeholder {
+    color: #A0A0A0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+input:focus {
+    background-color: white;
+}
+
+.submitButton {
+    background-color: #F3B341;
+    width: 146px;
+    height: 45.26px;
+    border-radius: 130px;
+    padding: 0;
+    border: solid 1px transparent;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #FFA403;
+}
+
+
+#infos {
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#output {
+    font-size: 20px;
+    padding: 20px;
+    background-color: #C9D088;
+    border-radius: 20px;
+}
+
+#infos h1 {
+    font-weight: 500;
+    font-size: 48px;
+}
+
+#infos h2 {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+/*FIM FORMULÁRIO*/
+
+/*SOBRE O SITE*/
+.aboutText {
+    font-size: 20px;
+    margin-top: -50px;
 }

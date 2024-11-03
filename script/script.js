@@ -75,3 +75,21 @@ function openModal(flor) {
 function closeModal() {
     document.getElementById('modalOverlay').style.display = 'none';
 }
+
+function mascaraTelefone(event) {
+    let telefone = event.target.value.replace(/\D+/g, "");
+
+    telefone = telefone.substring(0, 11);
+
+    if (telefone.length > 10) {
+        telefone = telefone.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
+      } else if (telefone.length > 6) {
+        telefone = telefone.replace(/^(\d{2})(\d{4})(\d{0,4})$/, "($1) $2-$3");
+      } else if (telefone.length > 2) {
+        telefone = telefone.replace(/^(\d{2})(\d{0,5})$/, "($1) $2");
+      } else {
+        telefone = telefone.replace(/^(\d*)/, "($1");
+      }
+
+      event.target.value = telefone;
+}
