@@ -9,15 +9,17 @@
 
 <body>
     <!--MENU-->
-    <div class="header">
-        <a id='homeMenu' class='active' href="index.html">Home</a>
-        <a class='link' href="about.html">Sobre</a>
-        <a class='link' href="primavera.html">Primavera</a>
-        <a class='link' href="verao.html">Verão</a>
-        <a class='link' href="outono.html">Outono</a>
-        <a class='link' id='invernoMenu'href="inverno.html">Inverno</a>
-    </div>
-
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <nav>
+        <div class="header" >
+            <a id='homeMenu' class='active' href="index.html">Home</a>
+            <a class='link' href="about.html">Sobre</a>
+            <a class='link' href="primavera.html">Primavera</a>
+            <a class='link' href="verao.html">Verão</a>
+            <a class='link' href="outono.html">Outono</a>
+            <a class='link' id='invernoMenu'href="inverno.html">Inverno</a>
+        </div>
+    </nav>
     <!--TOPO-->
     <div class="topoHome">
         <div class="mainTitle">
@@ -68,4 +70,6 @@
             </a>
         </div>
     </div>
+
+    <script src='script/script.js'></script>
 </body>

@@ -1,25 +1,72 @@
 
 /*CSS GERAL*/
 body {
-    margin-left: auto;
+    margin-left: auto;  /*margin automatica do browser*/
     margin-right: auto;
     padding: 0;
-    overflow-x: hidden;
-    font-family: "Kumbh Sans", serif;
+    overflow-x: hidden; /*evita rolagem horizontal indesejada*/
+    font-family: "Kumbh Sans", serif; /*especificações da fonte*/
     font-optical-sizing: auto;
-    font-weight: 500; /* ou o valor desejado */
+    font-weight: 500; 
     font-style: normal;
     font-variation-settings: "YOPQ" 116;
     color: #2D2D2D;
     background-color: #F0F0F0;
-    display: relative;
 }
 
-
 /*HEADER*/
-.header {
+nav .header {
     padding: 30px;
     text-align: center;
+    display: flex;
+    margin: auto;
+    max-width: fit-content;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 20;
+        left: 20;
+        z-index: 9999;
+        background-color: red;
+    }
+/*   position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;*/
+    nav .header {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        text-align: left;
+        margin-left: 30px; 
+    }
+    
+    nav .header a:hover {
+        border: none;
+        border-color: #2d2d2d; 
+        max-width: fit-content;
+        background-color: white;
+    }
+
+    .header.active {
+        display: flex;
+        background-color: white;
+    }
+
 }
 
 .header a { 
@@ -27,7 +74,7 @@ body {
     margin-right: 40px;
     color: #2D2D2D;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 10px; 
     border: solid 1px transparent; /* Borda transparente para reservar espaço */
 }
 
@@ -60,9 +107,9 @@ body {
 
 /*TOPO*/
 .topoHome {
-    max-width: fit-content;
-    margin: 50px auto;
-    display: flex;
+    max-width: fit-content;  /*ajusta o conteudo com o tamanho de seu conteúdo*/
+    margin: 50px auto; /*margin top e bottom - margin left e right*/
+    display: flex;  /*container flexivel -> por padrão o eixo principal é horizontal*/
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -100,8 +147,8 @@ body {
 }
 
 .optionAll {
-    align-items: center;
-    flex-direction: row;
+    align-items: center; 
+    flex-direction: row; /*itens são organizados no eixo horizontal*/
     justify-content: center;
     align-items: center;
     max-width: fit-content;
@@ -114,8 +161,8 @@ body {
     background-color: white;
     width: 191px;
     height: 149px;
-    display: inline-block;
-    text-align: left;
+    display: inline-block; /*elemento seja comportado como um bloco em termos de altura e largura e alinhado na mesma linha*/
+    text-align: left; 
     border-radius: 30px;
     box-shadow: 2px 2px 6px 1px rgb(0 0 0 / 25%);
     border: solid 1px transparent;
@@ -227,10 +274,10 @@ body {
     max-height: 80%;
     border-radius: 10px;
     padding: 20px;
-    flex-direction: column;
+    flex-direction: column; /*itens dentro do container são dispostos ao longo do eixo vertical*/
     align-items: center;
-    z-index: 9999;
-    overflow-y: auto;
+    z-index: 9999; /*Garante que o elemento fique acima de outros elementos da página*/
+    overflow-y: auto; /*permite que o conteudo seja rolado verticalmente caso ultrapasse o limite de altura definida para o elemento*/
 }
 
 .modalTitle {
@@ -266,7 +313,7 @@ header {
     border: 0px;
     padding: 10px 20px;
     font-family: "Kumbh Sans", serif;
-    font-optical-sizing: auto;
+    font-optical-sizing: auto; /*ajuste automatico da forma das letras*/
     font-weight: 500;
     font-style: normal;
     font-variation-settings: "YOPQ" 116;

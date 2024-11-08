@@ -93,3 +93,16 @@ function mascaraTelefone(event) {
 
       event.target.value = telefone;
 }
+
+function toggleMenu() {
+    const header = document.querySelector('nav .header');
+    const hamburger = document.querySelector('.hamburger');
+
+    header.classList.toggle('active');
+
+    if (hamburger.innerHTML === '☰') {
+        hamburger.innerHTML = '✕'
+    } else {
+        hamburger.innerHTML = '☰';
+    }
+}
