@@ -9,9 +9,9 @@
 
 <body> <!--GET-->
     <?php
-        $nome = $_GET["nome"];
-        $email = $_GET["email"];
-        $telefone = $_GET["telefone"];
+        $nome = $_POST["nome"];
+        $email = $_POST["email"];
+        $telefone = $_POST["telefone"];
     ?>
     <!--MENU-->
     <div class="header">
