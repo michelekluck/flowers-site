@@ -385,6 +385,12 @@ input:focus {
     padding: 0;
     border: solid 1px transparent;
     cursor: pointer;
+    font-family: "Kumbh Sans", serif; /*especificações da fonte*/
+    font-optical-sizing: auto;
+    font-weight: 700; 
+    font-style: normal;
+    font-variation-settings: "YOPQ" 116;
+    color: #2D2D2D;
 }
 
 .submitButton:hover {
