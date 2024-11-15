@@ -432,5 +432,71 @@ input:focus {
 
 /*TABELA*/
 .tableCSS {
-    background-color: yellow;
+    margin: auto;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.tableCampo {
+    align-items: left;
+    padding: 10px 30px; /*cima e embaixo*/ /*esquerda direita*/ 
+    background-color: #DEDEDE;
+    font-family: "Kumbh Sans", serif; /*especificações da fonte*/
+    font-optical-sizing: auto;
+    font-weight: 500;  
+    font-style: normal;
+    font-variation-settings: "YOPQ" 116;
+    color: #2D2D2D;
+    width: 345px;
+    height: 52px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.tableValor {
+    align-items: left;
+    padding: 10px 30px; /*cima e embaixo*/ /*esquerda direita*/ 
+    background-color: white;
+    font-family: "Kumbh Sans", serif; /*especificações da fonte*/
+    font-optical-sizing: auto;
+    font-weight: 500;  
+    font-style: normal;
+    font-variation-settings: "YOPQ" 116;
+    color: #2D2D2D;
+    width: 345px;
+    height: 52px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.tableTitle {
+    background-color: #DEDEDE;
+}
+
+.tableBody {
+    margin: auto;
+    max-width: fit-content;
+    align-items: center;
+}
+
+.tableButton {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.formSubtitle {
+    font-size: 24px;
+    text-align: left; 
+}
+
+.topoSubtitleForm {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    margin: auto;
+    max-width: 800px; 
+    width: 100%; 
+    padding: 0 20px;
 }

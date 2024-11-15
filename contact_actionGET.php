@@ -9,9 +9,9 @@
 
 <body> <!--GET-->
     <?php
-        $nome = $_GET["nome"];
-        $email = $_GET["email"];
-        $telefone = $_GET["telefone"];
+    $name = $_GET["name"];
+    $email = $_GET["email"];
+    $celular = $_GET["celular"];
     ?>
     <!--MENU-->
     <div class="header">
@@ -20,35 +20,42 @@
         <a class='link' href="primavera.html">Primavera</a>
         <a class='link' href="verao.html">Verão</a>
         <a class='link' href="outono.html">Outono</a>
-        <a class='link' id='invernoMenu'href="inverno.html">Inverno</a>
+        <a class='link' id='invernoMenu' href="inverno.html">Inverno</a>
     </div>
 
     <!--TOPO-->
     <div class="topoSeason">
         <div class="seasonTitle">
-            Preencha o formulário <br> abaixo para receber<br><span class="purpleBgHome">dicas</span> por e-mail!
+            Dados de <span class="purpleBgSeason">Contato</span>
+        </div>
+    </div>
+    <div class="topoSubtitleForm">
+        <div class="formSubtitle">
+            PHP recebe os dados enviados via GET de um form HTML
         </div>
     </div>
 
-    <table class="tableCSS">
-        <tr>
-            <th>CAMPO</th>
-            <th>VALOR</th></tr>
-        <tr>
-            <th>Nome</th>
-            <td><?php echo $nome?></td>
-        </tr>
-        <tr>
-            <th>E-mail</th>
-            <td><?php echo $email?></td>
-        </tr>
-        <tr>
-            <th>Telefone</th>
-            <td><?php echo $telefone?></td>
-        </tr>
-    </table>
-    <input type=button class="submitButton" value="<< Retornar">
-
+    <div class="tableBody">
+        <table class="tableCSS">
+            <tr>
+                <th class="tableCampo tableTitle">CAMPO</th>
+                <th class="tableValor tableTitle">VALOR</th>
+            </tr>
+            <tr>
+                <th class="tableCampo">Nome:</th>
+                <td class="tableValor"><?php echo $name ?></td>
+            </tr>
+            <tr>
+                <th class="tableCampo">E-mail:</th>
+                <td class="tableValor"><?php echo $email ?></td>
+            </tr>
+            <tr>
+                <th class="tableCampo">Telefone:</th>
+                <td class="tableValor"><?php echo $celular ?></td>
+            </tr>
+        </table>
+        <input type=button class="submitButton tableButton" value="Voltar">
+    </div>
     <!--SCRIPT-->
     <script src='script/script.js'></script>
 </body>

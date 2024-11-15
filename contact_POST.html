@@ -28,11 +28,11 @@
     <form id="myForm" method="POST" action="contact_actionPOST.php">
         <div class="form">
             <div>
-                <label for="nome"> *Seu nome: </label>
+                <label for="name"> *Seu nome: </label>
                 <input
                 class="inputForm"
                 type="text"
-                name="Nome"
+                name="name"
                 id="name"
                 placeholder="Como você gostaria de ser chamado?"
                 required
@@ -44,7 +44,7 @@
                 <input
                 class="inputForm"
                 type="email"
-                name="E-mail"
+                name="email"
                 id="email"
                 placeholder="seuemail@example.com"
                 required
@@ -52,18 +52,18 @@
             </div>
 
             <div>
-                <label for="phone"> Seu telefone: *opcional</label>
+                <label for="celular"> Seu celular: *opcional</label>
                 <input
                 class="inputForm"
                 type="tel"
-                name="Telefone"
-                id="phone"
+                name="celular"
+                id="celular"
                 onkeydown="return mascaraTelefone(event)"
                 placeholder="Caso queira receber dicas por whatsapp!"
                 title="O formato deve ser: (xx) xxxxx-xxxx"
                 />
             </div>
-            <div class="teste">
+            <div>
                 <input type="submit" class="submitButton" value="Enviar" />
             </div>
         </div>
