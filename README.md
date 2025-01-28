@@ -1,10 +1,4 @@
 <h1>Flowers Site </h1>
-
-Para exibir as imagens lado a lado, você pode usar CSS com a propriedade display: flex. Aqui está um exemplo de como organizar as imagens no seu HTML:
-
-html
-Copiar
-Editar
 <div style="display: flex; gap: 10px;">
     <img src="https://github.com/michelekluck/flowers-site/blob/main/img/Captura%20de%20tela%202025-01-28%20132005.png" alt="1" width="45%">
     <img src="https://github.com/michelekluck/flowers-site/blob/main/img/Captura%20de%20tela%202025-01-28%20132023.png" alt="2" width="45%">
